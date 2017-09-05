@@ -14,6 +14,7 @@
 		0960E5231F5C438F005F4B4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0960E5211F5C438F005F4B4E /* LaunchScreen.storyboard */; };
 		0960E52E1F5C438F005F4B4E /* backwardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0960E52D1F5C438F005F4B4E /* backwardTests.swift */; };
 		0960E5391F5C438F005F4B4E /* backwardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0960E5381F5C438F005F4B4E /* backwardUITests.swift */; };
+		0960E54C1F5C5252005F4B4E /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0960E54B1F5C5252005F4B4E /* GoogleMobileAds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0960E5341F5C438F005F4B4E /* backwardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = backwardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0960E5381F5C438F005F4B4E /* backwardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backwardUITests.swift; sourceTree = "<group>"; };
 		0960E53A1F5C438F005F4B4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0960E54B1F5C5252005F4B4E /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0960E54C1F5C5252005F4B4E /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				0960E52C1F5C438F005F4B4E /* backwardTests */,
 				0960E5371F5C438F005F4B4E /* backwardUITests */,
 				0960E5161F5C438F005F4B4E /* Products */,
+				0960E5481F5C51C9005F4B4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				0960E53A1F5C438F005F4B4E /* Info.plist */,
 			);
 			path = backwardUITests;
+			sourceTree = "<group>";
+		};
+		0960E5481F5C51C9005F4B4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0960E54B1F5C5252005F4B4E /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,8 +430,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V39G62DTJK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = backward/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = aren.backward;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -431,8 +448,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V39G62DTJK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = backward/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = aren.backward;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -516,6 +538,7 @@
 				0960E53F1F5C438F005F4B4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0960E5401F5C438F005F4B4E /* Build configuration list for PBXNativeTarget "backwardTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +547,7 @@
 				0960E5421F5C438F005F4B4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0960E5431F5C438F005F4B4E /* Build configuration list for PBXNativeTarget "backwardUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +556,7 @@
 				0960E5451F5C438F005F4B4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
